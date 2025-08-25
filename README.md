@@ -1,6 +1,6 @@
 # Implementação do Algoritmo de Karatsuba (Python)
 
-> **Trabalho Individual 1 — Fundamentos de Projeto e Análise de Algoritmos (Engenharia de Software).**  
+> Trabalho Individual 1 — Fundamentos de Projeto e Análise de Algoritmos (Engenharia de Software).  
 > Este repositório contém a implementação do algoritmo de Karatsuba conforme solicitado no enunciado do professor.
 
 ---
@@ -70,6 +70,7 @@ M = decisões + 1 = 3
 Via grafo: N=10, E=11, P=1 → M=3
 
 ### Fluxo de controle (Mermaid)
+
 ```mermaid
 flowchart TD
     A([Start])
@@ -88,6 +89,8 @@ flowchart TD
     B -- não --> D
     D -- sim --> E --> J
     D -- não --> F --> G --> H --> I --> J
+```
+
 ---
 
 ## Validação

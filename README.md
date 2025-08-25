@@ -73,22 +73,22 @@ Via grafo: N=10, E=11, P=1 → M=3
 
 ```mermaid
 flowchart TD
-    A([Start])
-    B{a == 0 or b == 0?}
-    C[return 0]
-    D{a < 10 and b < 10?}
-    E[return sign*(a*b)]
-    F[calcula n, m, base]
-    G[split partes altas/baixas]
-    H[z2, z0, z1 recursivos]
-    I[combina resultado]
-    J([End])
+    A(["Start"]);
+    B{"a == 0 or b == 0?"};
+    C["return 0"];
+    D{"a < 10 and b < 10?"};
+    E["return sign*(a*b)"];
+    F["calcula n, m, base"];
+    G["split partes altas/baixas"];
+    H["z2, z0, z1 recursivos"];
+    I["combina resultado"];
+    J(["End"]);
 
-    A --> B
-    B -- sim --> C --> J
-    B -- não --> D
-    D -- sim --> E --> J
-    D -- não --> F --> G --> H --> I --> J
+    A --> B;
+    B -- "sim" --> C --> J;
+    B -- "não" --> D;
+    D -- "sim" --> E --> J;
+    D -- "não" --> F --> G --> H --> I --> J;
 ```
 
 ---
